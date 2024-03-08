@@ -17,11 +17,11 @@ This project implements a single core LoRaWAN end device with STM32 sequencer. P
 
 To create the LoRaWAN end device from skretch without using directly the template project, the following steps should be followed:
 
-- ### 1 Create project from existing .ioc file
+- ### Create project from existing .ioc file
     -  Use the .ioc file of the project.
     - When prompted, generate code
 
-- ### 2 Manually add BSP driver
+- ### Manually add BSP driver
     - Since Sub-GHz is hardware agnostic, the Board Support Package is required to control the RF Switch;
     - In project tree -> right-click on "Drivers" folder and select "Import":
         <div align="left">
@@ -41,4 +41,4 @@ To create the LoRaWAN end device from skretch without using directly the templat
             <img src="Images/Include_Path.png">
         </div> 
     
-- ### 3 After these steps, compile it!
+- ### After these steps, compile it!

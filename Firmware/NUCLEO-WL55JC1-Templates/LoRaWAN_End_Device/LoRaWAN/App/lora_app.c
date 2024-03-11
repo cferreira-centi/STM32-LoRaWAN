@@ -553,10 +553,9 @@ static void OnRxData(LmHandlerAppData_t *appData, LmHandlerRxParams_t *params)
 
 static void SendTxData(void)
 {
-	uint8_t i = 0;
-
 	/* USER CODE BEGIN SendTxData_1 */
 	LmHandlerErrorStatus_t status = LORAMAC_HANDLER_ERROR;
+	uint8_t i = 0;
 
 	UTIL_TIMER_Time_t nextTxIn = 0;
 

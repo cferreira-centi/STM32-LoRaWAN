@@ -21,6 +21,12 @@ To create the LoRaWAN end device from skretch without using directly the templat
     - Use the .ioc file of the project.
     - When prompted, generate code
 
+- ### Code Generator
+    - Open project .ioc file and go to "Project Manager". On the left choose "Code Generator" and select option "Add necessary libray files as reference in the toolchain project configuration file" 
+        <div align="left">
+            <img src="Images/Code_generator.png">
+        </div> 
+
 - ### Manually add BSP driver
     - Since Sub-GHz is hardware agnostic, the Board Support Package is required to control the RF Switch;
     - In project tree -> right-click on "Drivers" folder and select "Import":

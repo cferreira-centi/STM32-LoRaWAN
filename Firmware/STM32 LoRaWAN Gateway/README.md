@@ -39,7 +39,7 @@ If the Gotthard LoRaWAN server is locally implemented, we should follow the next
             <img src="Images/Ethernet_config_local_server.png">
         </div> 
 - Define gateway MAC Address: AT + MAC = [MAC Address]
-- Change IP to static and define ip, netmask and lorawan server: AT + IP = [IP, netmask, lorawan server] -> AT + IP = STATIC, 192.168.1.7, 255.255.255.0, 192.168.1.5
+- Change IP to static and define ip, netmask and gateway: AT + IP = [IP, netmask, gateway] -> AT + IP = STATIC, 192.168.1.7, 255.255.255.0, 192.168.1.5
 - If necessary change channels (it should be already configured): AT + CH
 - At the end of configuration, reset gateway: AT + RESET
 - If necessary AT + Help to find remaining commands

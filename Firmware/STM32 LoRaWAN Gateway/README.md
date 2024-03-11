@@ -21,7 +21,7 @@ LoRaWAN gateways should be configured to be able to forward packets to the LoRaW
 The STM32 LoRaWAN gateway is configured through AT commands. Initial configuration requires the following parametrization: 
 
 - Define gateway MAC Address: AT + MAC = [MAC Address]
-- Define the LoRaWAN server, uplink/downlink UDP port: AT + PKTFWD = [server addres,port_up,port_down]
+- Define LoRaWAN server and uplink/downlink UDP port: AT + PKTFWD = [server addres, port_up, port_down]
 - If necessary change channels (it should be already configured): AT + CH
 - At the end of configuration, reset gateway: AT + RESET
 - If necessary AT + Help to find remaining commands
@@ -34,12 +34,17 @@ The gateway log after configuration should be similar to:
 #### (b) Connect gateway to local-based Gotthard
 If the Gotthard LoRaWAN server is locally implemented, we should follow the next steps:
 
-- Change ethernet configurations in such way the gateway can "see" the server:
+- Change ethernet configurations in such way the gateway can "see" LoRaWAN server:
         <div align="left">
             <img src="Images/Ethernet_config_local_server.png">
         </div> 
 - Define gateway MAC Address: AT + MAC = [MAC Address]
-- Change IP to static and define IP, netmask and gateway: AT + IP = [IP, netmask, gateway] -> AT + IP = STATIC, 192.168.1.7, 255.255.255.0, 192.168.1.5
+- Change IP to static and define ip, netmask and gateway: AT + IP = [IP, netmask, gateway] -> AT + IP = STATIC, 192.168.1.7, 255.255.255.0, 192.168.1.5
 - If necessary change channels (it should be already configured): AT + CH
 - At the end of configuration, reset gateway: AT + RESET
 - If necessary AT + Help to find remaining commands
+
+The gateway log after configuration should be similar to:
+        <div align="left">
+            <img src="Images/Gateway_to_local.png">
+        </div> 

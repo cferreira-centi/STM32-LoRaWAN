@@ -12,12 +12,12 @@ Hereafter, necessary steps to use LoRaWAN Gateway from STM32 are presented.
 To use the STM32 gateway, the following steps should be followed:
 
 ### 1. Program gateway
-    -  Using STM32CubeProgrammer, program the gateway with the .bin file located at the "Bin" folder. 
+- Using STM32CubeProgrammer, program the gateway with the .bin file located at the "Bin" folder. 
 
 ### 2. Configure gateway
 LoRaWAN gateways should be configured to be able to forward packets to the LoRaWAN network server. Below are two ways to configure LoRaWAN gateways, depending on the Gotthard implementation.
 
-#### Connect gateway to Docker-based Gotthard
+#### (a) Connect gateway to Docker-based Gotthard
 The STM32 LoRaWAN gateway is configured through AT commands. Initial configuration requires the following parametrization: 
 
 - Define gateway MAC Address: AT + MAC = [MAC Address]
@@ -31,7 +31,7 @@ The gateway log after configuration should be similar to:
             <img src="Images/Gateway_to_docker.png">
         </div> 
 
-#### Connect gateway to local-based Gotthard
+#### (b) Connect gateway to local-based Gotthard
 If the Gotthard LoRaWAN server is locally implemented, we should follow the next steps:
 
 - Change ethernet configurations in such way the gateway can "see" the server:

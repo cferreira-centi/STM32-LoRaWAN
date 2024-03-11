@@ -1,4 +1,4 @@
-# Template project
+# LoRaWAN Template project
 
 This project implements a single core LoRaWAN end device with STM32 sequencer. Project was created in STM32CubeIDE v1.13.1.
 
@@ -18,7 +18,7 @@ This project implements a single core LoRaWAN end device with STM32 sequencer. P
 To create the LoRaWAN end device from skretch without using directly the template project, the following steps should be followed:
 
 - ### Create project from existing .ioc file
-    -  Use the .ioc file of the project.
+    - Use the .ioc file of the project.
     - When prompted, generate code
 
 - ### Manually add BSP driver
@@ -36,9 +36,11 @@ To create the LoRaWAN end device from skretch without using directly the templat
             <img src="Images/Finish.png">
         </div> 
     - Rename "stm32wlxx_nucleo_conf_template.h" file to "stm32wlxx_nucleo_conf.h".
-    - Before code compiling, the directory containing the BSP files must be added to the list of include directories. For that, right-click on "STM32WLxx_Nucleo" folder and select "Add/remove include path..". A window will pop-up. ENsure both Debug and Release options are checked.
+    - Before code compiling, the directory containing the BSP files must be added to the list of include directories. For that, right-click on "STM32WLxx_Nucleo" folder and select "Add/remove include path..". A window will pop-up. Ensure both "Debug" and "Release" options are checked.
         <div align="left">
             <img src="Images/Include_Path.png">
         </div> 
     
 - ### After these steps, compile it!
+
+## STM32 LoRaWAN Gateway

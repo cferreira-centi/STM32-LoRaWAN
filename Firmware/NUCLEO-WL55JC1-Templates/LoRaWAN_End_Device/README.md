@@ -42,5 +42,3 @@ To create the LoRaWAN end device from skretch without using directly the templat
         </div> 
     
 - ### After these steps, compile it!
-
-## STM32 LoRaWAN Gateway
